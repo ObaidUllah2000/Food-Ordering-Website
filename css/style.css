@@ -1,0 +1,218 @@
+/* CSS reset */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* CSS variabltes */
+:root{
+    --navbar-height: 54px
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+#navbar::before{
+    content: "";
+    background: black;
+    position: absolute;
+    top:0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+/* Navigation Bar: Logo and Images */
+#logo{
+    margin: 10px 34px;
+}
+#logo img{
+    /* position: relative; */
+    height: 70px;
+    margin: 3px 4px;
+    /* width: 70px; */
+}
+/* Navigation Bar: List */
+#navbar ul{
+    display: flex;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 23px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    color: black;
+    background: white;
+}
+/* Home Section */
+#home{
+    display: flex;
+    /* position: relative; */
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 633px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: url('../images for food website/mastrr.jfif') no-repeat center center/cover;
+    height: 642px;
+    width: 100%;
+    z-index: -1;
+    opacity: .87;
+}
+#home h1{
+    color: white;
+    /* font-size: 3.8rem; */
+    
+}
+#home p{
+    color: white;
+    font-size: 1.8rem;
+}
+/* Services Section */
+#services{
+    margin-top: 10px;
+    margin-bottom: 34px;
+    margin: 10px 34px 34px 34px ;
+    display: flex;
+}
+#services .box{
+    /* display: flex; */
+    /* height: 100px; */
+    border: 2px solid red;
+    margin: 5px 13px;
+    padding: 34px;
+    border-radius: 23px;
+}
+#services .box img{
+    height: 160px;
+    display: block;
+    margin: auto;
+    /* width: 40%; */
+}
+#services .box p{
+    font-family: 'Bree serif', serif;
+}
+
+/* Clients Section */
+#client-section{
+    color: white;
+    /* height: 400px; */
+    position: relative;
+}
+#client-section::before{
+    content: "";
+    background: url('../clients/wood.webp') no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+    /* margin-bottom: 30px; */
+}
+#clients{
+    /* color: white; */
+    display: flex;
+    width: 100vw;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.client-items{
+    padding: 10px;
+    
+}
+#clients img{
+    /* display: block; */
+    height: 250px;
+    width: 350px;
+    border-radius: 15px;
+}
+
+
+/* Contact Section */
+#contact-section{
+    position: relative;
+    color: white;
+}
+#contact-section::before{
+    content: "";
+    background: url('../clients/wood1.webp');
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: .5rem;
+    border-radius: 11px;
+    font-size: 1.1rem;
+    color: white;
+    background: black;
+    border-color: black;
+}
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+    /* color: black; */
+    font-size: 1.3rem;
+    font-family: 'Bree serif', serif;
+}
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px
+}
+
+
+/* Utility Classes */
+.h-primary{
+    font-size: 2.3rem;
+    padding: 12px;
+    font-family: 'Bree serif', serif;
+}
+.h-secondary{
+    font-size: 1.3rem;
+    padding: 12px;
+    font-family: 'Bree serif', serif;
+}
+.center{
+    text-align: center;
+    text-justify: auto;
+}
+.btn{    
+    padding: 2px 20px;
+    border: 2px solid rgb(46 139 46);
+    margin: 18px;
+    background: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+html{
+    scroll-behavior: smooth;
+}
